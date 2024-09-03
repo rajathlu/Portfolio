@@ -56,6 +56,19 @@ $(document).ready(function(){
 		});
 
 	// 3. Progress-bar
+
+	document.getElementById('contactForm').addEventListener('submit', function(event) {
+		event.preventDefault(); 
+	
+		
+		document.getElementById('name').value = '';
+		document.getElementById('email').value = '';
+		document.getElementById('subject').value = '';
+		document.getElementById('comment').value = '';
+	
+		
+		alert('Form submitted successfully!');
+	});
 	
 		var dataToggleTooTip = $('[data-toggle="tooltip"]');
 		var progressBar = $(".progress-bar");
