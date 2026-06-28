@@ -1,688 +1,651 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rajath K — MERN Stack Developer. Designed to build meaningful web experiences.">
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>RAJATH </title>
+    <title>Rajath K — MERN Stack Developer</title>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <style>
+        :root {
+            --bg: #0a0a0b;
+            --bg-2: #111113;
+            --surface: #141416;
+            --line: rgba(255, 255, 255, 0.10);
+            --text: #f4f4f5;
+            --muted: #8a8a92;
+            --accent: #d2f55f;
+            --accent-dim: rgba(210, 245, 95, 0.12);
+            --radius: 18px;
+            --display: 'Space Grotesk', 'Poppins', sans-serif;
+            --body: 'Poppins', sans-serif;
+        }
 
-    </head>
-	
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-			        <div class="container">
+        html { scroll-behavior: smooth; }
 
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">rajath k</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--body);
+            font-weight: 300;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
 
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-			                    <li class=" smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-			                    <!-- <li class="smooth-menu"><a href="#profiles">profile</a></li> -->
-			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-			                    <!-- <li class="smooth-menu"><a href="#clients">clients</a></li> -->
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+        ::selection { background: var(--accent); color: #000; }
 
-		    <div class="clearfix"></div>
+        .wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 28px; }
 
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> rajath.</span>   </h2>
-							<p> MERN Stack Developer</p>
-							<a href="assets/download/RajathResume.pdf" download>download resume</a>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
+        .eyebrow {
+            font-family: var(--display);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .eyebrow::before {
+            content: "";
+            width: 26px; height: 1px;
+            background: var(--accent);
+            display: inline-block;
+        }
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+        .section { padding: 130px 0; position: relative; }
+        .section-head { max-width: 720px; margin-bottom: 64px; }
+        .section-head h2 {
+            font-family: var(--display);
+            font-weight: 600;
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            margin-top: 18px;
+        }
 
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								
-								<p>
-									I am a professional MERN Stack developer with extensive experience in building high-quality web applications. Proficient in MySQL, Express.js, React.js, and Node.js, I specialize in creating scalable and efficient solutions. My approach combines technical expertise with a commitment to writing clean, maintainable code, ensuring that every project aligns with client needs and industry standards. With hands-on experience in the MERN Stack framework, I possess excellent verbal and written communication skills, exceptional problem-solving abilities, and a keen attention to detail. I am passionate about continuously learning new tools, languages, methodologies, and workflows within the MERN Stack ecosystem.,
-								</p>
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>9567028281</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>Email</h3>
-											<p><a href="mailto:kalarikkalrajath@gmail.com">kalarikkalrajath@gmail.com</a></p>
-										</div>
-									</div>
-									<!-- <div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>website</h3>
-											<p>www.brownsine.com</p>
-										</div>
-									</div> -->
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/images/about/rajath (Large).jpg" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
-									
-										<li>
-											<a href="https://github.com/rajathlu">
-												<i  class="fa fa-github" aria-hidden="true"></i>
-											</a>
-											
-										</li><!-- / li -->
-										
-										<li>
-											<a href="https://www.linkedin.com/in/rajath-k-957a6b21a">
-												<i  class="fa fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										<li>
-											<a href="https://www.instagram.com/_rajath___k?igsh=Z2lmeXdkdDRuZmt6">
-												<i  class="fa fa-instagram" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										
-										
-									</ul><!-- / ul -->
-								</div><!-- /.about-list-icon -->
+        /* ---------- NAV ---------- */
+        header.nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            transition: background .35s ease, border-color .35s ease, padding .35s ease;
+            border-bottom: 1px solid transparent;
+        }
+        header.nav.scrolled {
+            background: rgba(10, 10, 11, 0.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--line);
+        }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+        .brand {
+            font-family: var(--display);
+            font-weight: 700;
+            font-size: 19px;
+            letter-spacing: -0.01em;
+            display: flex; align-items: center; gap: 9px;
+        }
+        .brand .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+        .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; }
+        .nav-links a {
+            font-size: 14px; font-weight: 400; color: var(--muted);
+            letter-spacing: 0.02em; transition: color .25s; text-transform: capitalize;
+        }
+        .nav-links a:hover { color: var(--text); }
+        .nav-cta {
+            font-family: var(--display); font-weight: 500; font-size: 14px;
+            color: #000 !important; background: var(--accent);
+            padding: 11px 22px; border-radius: 100px; transition: transform .25s, box-shadow .25s;
+        }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px var(--accent-dim); }
+        .nav-toggle { display: none; background: none; border: 0; color: var(--text); font-size: 22px; cursor: pointer; }
 
-							</div>
+        /* ---------- HERO ---------- */
+        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; padding-top: 90px; overflow: hidden; }
+        .hero-glow {
+            position: absolute; top: -10%; right: -5%; width: 60vw; height: 60vw; max-width: 760px; max-height: 760px;
+            background: radial-gradient(circle, rgba(210,245,95,0.16), transparent 62%);
+            filter: blur(20px); pointer-events: none; z-index: 0;
+        }
+        .hero .wrap { position: relative; z-index: 2; }
+        .hero h1 {
+            font-family: var(--display); font-weight: 600;
+            font-size: clamp(2.8rem, 9vw, 7rem);
+            line-height: 0.98; letter-spacing: -0.035em; margin: 26px 0 0;
+        }
+        .hero h1 .accent { color: var(--accent); }
+        .hero h1 .outline {
+            color: transparent; -webkit-text-stroke: 1.4px var(--text);
+        }
+        .hero-sub {
+            margin-top: 30px; max-width: 540px; font-size: 18px; color: var(--muted); font-weight: 300;
+        }
+        .hero-actions { margin-top: 44px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+        .btn {
+            font-family: var(--display); font-weight: 500; font-size: 15px; letter-spacing: 0.01em;
+            padding: 15px 30px; border-radius: 100px; display: inline-flex; align-items: center; gap: 10px;
+            transition: transform .25s, background .25s, box-shadow .25s, border-color .25s; cursor: pointer; border: 1px solid transparent;
+        }
+        .btn-primary { background: var(--accent); color: #000; }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 38px var(--accent-dim); }
+        .btn-ghost { background: transparent; border-color: var(--line); color: var(--text); }
+        .btn-ghost:hover { border-color: var(--text); transform: translateY(-3px); }
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
-		<!--education start -->
-		<section id="education" class="education">
-			<div class="section-heading text-center">
-				<h2>education</h2>
-			</div>
-			<div class="container">
-				<div class="education-horizontal-timeline">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2018 - 2022</h2>
-									<h3>B-Tech <span>In</span> computer science</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											APJ Abdul Kalam Technological University
-										</h4>
-										<h5>Kozhikode,Kerala</h5>
-										<p class="description">
-											APJ Abdul Kalam Technological University is a state public technological university headquartered at Thiruvananthapuram, Kerala, India 
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						
-						
-					</div>
-				</div>
-			</div>
+        .hero-meta {
+            margin-top: 80px; display: flex; gap: 56px; flex-wrap: wrap;
+            border-top: 1px solid var(--line); padding-top: 32px;
+        }
+        .hero-meta .stat .n { font-family: var(--display); font-size: 2rem; font-weight: 600; }
+        .hero-meta .stat .n span { color: var(--accent); }
+        .hero-meta .stat .l { font-size: 13px; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
 
-		</section><!--/.education-->
-		<!--education end -->
+        /* marquee */
+        .marquee { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; padding: 22px 0; background: var(--bg-2); }
+        .marquee-track { display: flex; gap: 60px; white-space: nowrap; width: max-content; animation: scroll 26s linear infinite; }
+        .marquee-track span { font-family: var(--display); font-size: 1.4rem; font-weight: 500; color: var(--muted); letter-spacing: -0.01em; display: inline-flex; align-items: center; gap: 60px; }
+        .marquee-track span::after { content: "✦"; color: var(--accent); font-size: 1rem; }
+        @keyframes scroll { to { transform: translateX(-50%); } }
 
-		<!--skills start -->
-		<section id="skills" class="skills">
-				<div class="skill-content">
-					<div class="section-heading text-center">
-						<h2>skills</h2>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">Java Script</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													  
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Node Js 
-										</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">MySQL</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Css</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText"> React Js</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Express Js</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">Html</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<!-- /.barWrapper -->
-								</div>
-							</div>
-						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
-				</div><!-- /.skill-content-->
+        /* ---------- ABOUT ---------- */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+        .about-img { position: relative; }
+        .about-img img { border-radius: var(--radius); width: 100%; object-fit: cover; filter: grayscale(0.15) contrast(1.02); }
+        .about-img .frame { position: absolute; inset: -14px -14px auto auto; width: 120px; height: 120px; border-top: 2px solid var(--accent); border-right: 2px solid var(--accent); border-top-right-radius: var(--radius); }
+        .about-social { position: absolute; bottom: 18px; left: 18px; display: flex; gap: 10px; }
+        .about-social a {
+            width: 44px; height: 44px; border-radius: 50%; background: rgba(10,10,11,0.7); backdrop-filter: blur(6px);
+            display: grid; place-items: center; font-size: 16px; border: 1px solid var(--line); transition: .25s;
+        }
+        .about-social a:hover { background: var(--accent); color: #000; transform: translateY(-3px); }
+        .about-txt p.lead { font-size: 19px; font-weight: 300; color: #cfcfd4; line-height: 1.7; }
+        .about-info { display: flex; gap: 48px; margin-top: 36px; flex-wrap: wrap; }
+        .about-info h3 { font-family: var(--display); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 6px; }
+        .about-info p { font-size: 16px; font-weight: 400; }
+        .about-info a:hover { color: var(--accent); }
 
-		</section><!--/.skills-->
-		<!--skills end -->
+        /* ---------- SKILLS ---------- */
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px 64px; }
+        .skill .skill-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+        .skill .skill-top .name { font-family: var(--display); font-size: 17px; font-weight: 500; }
+        .skill .skill-top .pct { font-size: 14px; color: var(--accent); font-family: var(--display); }
+        .bar { height: 4px; background: var(--surface); border-radius: 100px; overflow: hidden; }
+        .bar > i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), #9fd400); border-radius: 100px; transition: width 1.3s cubic-bezier(.16,1,.3,1); }
 
-		<!--experience start -->
-		<section id="experience" class="experience">
-			<div class="section-heading text-center">
-				<h2>experience</h2>
-			</div>
-			<div class="container">
-				<div class="experience-content">
-						<div class="main-timeline">
-							<ul>
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2023(July) - Present</h2>
-													<h3>Software Developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Finobase Global Solutions
-														</h4>
-														<h5>Kochi,Kerala</h5>
-														<p class="description">
-															Finobase is a leading Software and Web Application development Multi National Company serving clients across the globe which commenced its operations in 2021.. 
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+        /* ---------- EXPERIENCE ---------- */
+        .timeline { position: relative; max-width: 860px; }
+        .timeline::before { content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 1px; background: var(--line); }
+        .tl-item { position: relative; padding: 0 0 56px 46px; }
+        .tl-item:last-child { padding-bottom: 0; }
+        .tl-item::before {
+            content: ""; position: absolute; left: 0; top: 5px; width: 15px; height: 15px; border-radius: 50%;
+            background: var(--bg); border: 2px solid var(--accent); box-shadow: 0 0 0 5px rgba(210,245,95,0.08);
+        }
+        .tl-date { font-family: var(--display); font-size: 13px; letter-spacing: 0.06em; color: var(--accent); text-transform: uppercase; }
+        .tl-item h4 { font-family: var(--display); font-size: 1.5rem; font-weight: 600; margin: 8px 0 2px; letter-spacing: -0.01em; }
+        .tl-role { font-size: 15px; color: var(--text); font-weight: 400; }
+        .tl-loc { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+        .tl-item p.desc { font-size: 15px; color: var(--muted); max-width: 620px; }
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023(Feb) - 2023(July)
-													</h2>
-													<h3>associate design director</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-5">
-												<div class="timeline">
-													<div class="timeline-content text-right">
-														<h4 class="title">
-															Dom Technolabs
-														</h4>
-														<h5>Kochi, Kerala</h5>
-														<p class="description">
-															Dom & Dom Technology Solutions Pvt. Ltd. is a full service digital agency located in Kerala, India.
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5 experience-time-main">
-												<div class="experience-time">
-													<h2>
-														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2023(Feb) - 2023(July)
-													</h2>
-													<h3>React Js Developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+        /* ---------- PORTFOLIO ---------- */
+        .work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+        .work-card {
+            position: relative; border-radius: var(--radius); overflow: hidden; background: var(--surface);
+            border: 1px solid var(--line); aspect-ratio: 16 / 11; transition: transform .4s, border-color .4s;
+        }
+        .work-card:hover { transform: translateY(-6px); border-color: rgba(210,245,95,0.4); }
+        .work-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s, filter .5s; }
+        .work-card:hover img { transform: scale(1.05); }
+        .work-overlay {
+            position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 28px;
+            background: linear-gradient(to top, rgba(8,8,9,0.92) 5%, rgba(8,8,9,0.2) 55%, transparent);
+            opacity: 0; transition: opacity .4s;
+        }
+        .work-card:hover .work-overlay { opacity: 1; }
+        .work-overlay .tag { font-family: var(--display); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); }
+        .work-overlay h3 { font-family: var(--display); font-size: 1.5rem; font-weight: 600; margin-top: 6px; display: flex; align-items: center; gap: 10px; }
+        .work-overlay h3 i { font-size: 1rem; opacity: .7; }
 
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2022(Sept) - 2023(Feb)</h2>
-													<h3>React Js (Intern)</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															Poonchola Technologies
-														</h4>
-														<h5>Kozhikode, Kerala</h5>
-														<p class="description">
-															Poonchola Technologies Pvt Ltd is one of the top Computer Training Institutes located in Meenchanda Kozhikode (Kerala).
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
+        /* ---------- CONTACT ---------- */
+        .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 70px; align-items: start; }
+        .contact-cta h2 { font-family: var(--display); font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 600; line-height: 1.02; letter-spacing: -0.03em; }
+        .contact-cta h2 .accent { color: var(--accent); }
+        .contact-detail { margin-top: 40px; display: grid; gap: 26px; }
+        .contact-detail .row h3 { font-family: var(--display); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 5px; }
+        .contact-detail .row p, .contact-detail .row a { font-size: 19px; font-weight: 400; }
+        .contact-detail .row a:hover { color: var(--accent); }
+        .contact-socials { margin-top: 38px; display: flex; gap: 12px; }
+        .contact-socials a { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; font-size: 17px; transition: .25s; }
+        .contact-socials a:hover { background: var(--accent); color: #000; border-color: var(--accent); transform: translateY(-3px); }
 
-								
+        .form { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 36px; }
+        .form .field { margin-bottom: 20px; }
+        .form label { display: block; font-family: var(--display); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 9px; }
+        .form input, .form textarea {
+            width: 100%; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
+            color: var(--text); font-family: var(--body); font-size: 15px; transition: border-color .25s; resize: vertical;
+        }
+        .form input:focus, .form textarea:focus { outline: none; border-color: var(--accent); }
+        .form button { width: 100%; justify-content: center; margin-top: 6px; }
+        .form button[disabled] { opacity: .6; cursor: not-allowed; }
+        .form-status { margin-top: 16px; font-size: 14px; text-align: center; min-height: 1em; }
+        .form-status.ok { color: var(--accent); }
+        .form-status.err { color: #ff6b6b; }
 
-							</ul>
-						</div><!--.main-timeline-->
-					</div><!--.experience-content-->
-			</div>
+        /* ---------- FOOTER ---------- */
+        footer.foot { border-top: 1px solid var(--line); padding: 40px 0; }
+        .foot-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+        .foot-inner p { font-size: 14px; color: var(--muted); }
+        .foot-inner .brand { font-size: 16px; }
 
-		</section><!--/.experience-->
-		<!--experience end -->
+        #toTop {
+            position: fixed; right: 26px; bottom: 26px; width: 48px; height: 48px; border-radius: 50%;
+            background: var(--accent); color: #000; display: grid; place-items: center; font-size: 20px; cursor: pointer;
+            opacity: 0; visibility: hidden; transform: translateY(12px); transition: .35s; z-index: 90; border: 0;
+        }
+        #toTop.show { opacity: 1; visibility: visible; transform: translateY(0); }
 
-		<!--profiles start -->
-	
-		
-		<!--/.profiles-->
-		<!--profiles end -->
+        /* reveal animation */
+        .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+        .reveal.in { opacity: 1; transform: none; }
 
-		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>portfolio</h2>
-				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
-							<div class="row">
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 880px) {
+            .nav-links { position: fixed; inset: 76px 0 auto 0; background: var(--bg-2); flex-direction: column; gap: 0; padding: 10px 0; border-bottom: 1px solid var(--line); transform: translateY(-130%); transition: transform .4s; }
+            .nav-links.open { transform: translateY(0); }
+            .nav-links li { width: 100%; }
+            .nav-links a { display: block; padding: 16px 28px; }
+            .nav-links .nav-cta { margin: 12px 28px; text-align: center; }
+            .nav-toggle { display: block; }
+            .about-grid, .skills-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
+            .about-img { max-width: 420px; }
+            .work-grid { grid-template-columns: 1fr; }
+            .section { padding: 90px 0; }
+            .hero-meta { gap: 36px; }
+        }
+        @media (max-width: 480px) {
+            .wrap { padding: 0 20px; }
+            .hero-actions { width: 100%; }
+            .btn { flex: 1; justify-content: center; }
+            .form { padding: 24px; }
+        }
+    </style>
+</head>
 
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/propertyBoz.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://www.propertyboz.com/">
-												PropertyBoz
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									
-								</div><!-- /.col -->
+<body>
 
-								
+    <!-- NAV -->
+    <header class="nav" id="nav">
+        <div class="wrap nav-inner">
+            <a href="#hero" class="brand"><span class="dot"></span>rajath k</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu"><i class="fa fa-bars"></i></button>
+        </div>
+    </header>
 
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/appLogo.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="https://www.aeroerp.finobaseglobal.com/settings/signIn">
-												Aero Erp
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<!-- /.item -->
-								</div><!-- /.col -->
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
-			</div><!--/.portfolio-details-->
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="wrap">
+            <span class="eyebrow reveal">MERN Stack Developer</span>
+            <h1 class="reveal">
+                Designed to build<br>
+                <span class="accent">meaningful</span> <span class="outline">web.</span>
+            </h1>
+            <p class="hero-sub reveal">
+                Hi, I'm Rajath K — a MERN stack developer crafting scalable, clean and
+                efficient web applications with React, Node.js, Express and MySQL.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="assets/download/Rajath_Resume (2).pdf" download class="btn btn-primary"><i class="fa fa-download"></i> Download Resume</a>
+                <a href="#contact" class="btn btn-ghost">Start a project <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-meta reveal">
+                <div class="stat"><div class="n">3<span>+</span></div><div class="l">Years Experience</div></div>
+                <div class="stat"><div class="n">10<span>+</span></div><div class="l">Projects Delivered</div></div>
+                <div class="stat"><div class="n">MERN</div><div class="l">Core Stack</div></div>
+            </div>
+        </div>
+    </section>
 
-		</section><!--/.portfolio-->
-		<!--portfolio end -->
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+    </div>
 
-		<!--clients start -->
-		
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="wrap">
+            <div class="about-grid">
+                <div class="about-img reveal">
+                    <div class="frame"></div>
+                    <img src="assets/images/about/rajath (Large).jpg" alt="Rajath K">
+                    <div class="about-social">
+                        <a href="https://github.com/rajathlu" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rajath-k-957a6b21a" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_rajath___k?igsh=Z2lmeXdkdDRuZmt6" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="about-txt reveal">
+                    <span class="eyebrow">About me</span>
+                    <h2 style="font-family:var(--display);font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;letter-spacing:-0.02em;margin:16px 0 22px;">
+                        Clean code, scalable solutions, real impact.
+                    </h2>
+                    <p class="lead">
+                        I'm a professional MERN stack developer with extensive experience building
+                        high-quality web applications. Proficient in MySQL, Express.js, React.js and
+                        Node.js, I specialize in creating scalable and efficient solutions — pairing
+                        technical expertise with a commitment to clean, maintainable code and a keen
+                        eye for detail.
+                    </p>
+                    <div class="about-info">
+                        <div>
+                            <h3>Phone</h3>
+                            <p>9567028281</p>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:kalarikkalrajath@gmail.com">kalarikkalrajath@gmail.com</a></p>
+                        </div>
+                        <div>
+                            <h3>Role</h3>
+                            <p>MERN Stack Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		</section><!--/.clients-->
-		<!--clients end -->
+    <!-- EDUCATION -->
+    <section class="section" id="education" style="background:var(--bg-2);">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">Education</span>
+                <h2>Where it all started.</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <div class="tl-date">2018 — 2022</div>
+                    <h4>B.Tech in Computer Science</h4>
+                    <div class="tl-role">APJ Abdul Kalam Technological University</div>
+                    <div class="tl-loc">Kozhikode, Kerala</div>
+                    <p class="desc">
+                        APJ Abdul Kalam Technological University is a state public technological university
+                        headquartered at Thiruvananthapuram, Kerala, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-form">
-									<!-- <form>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div>
-											</div>
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button" type="submit">submit</a>
-												</div>
-											</div>
-										</div>
-									</form> -->
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">Skills</span>
+                <h2>The tools I build with.</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill reveal"><div class="skill-top"><span class="name">JavaScript</span><span class="pct">90%</span></div><div class="bar"><i data-pct="90"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">React.js</span><span class="pct">90%</span></div><div class="bar"><i data-pct="90"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">Node.js</span><span class="pct">85%</span></div><div class="bar"><i data-pct="85"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">Express.js</span><span class="pct">85%</span></div><div class="bar"><i data-pct="85"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">MySQL</span><span class="pct">97%</span></div><div class="bar"><i data-pct="97"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">HTML</span><span class="pct">97%</span></div><div class="bar"><i data-pct="97"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">CSS</span><span class="pct">90%</span></div><div class="bar"><i data-pct="90"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">Nest.js</span><span class="pct">85%</span></div><div class="bar"><i data-pct="85"></i></div></div>
+                <div class="skill reveal"><div class="skill-top"><span class="name">Jest</span><span class="pct">80%</span></div><div class="bar"><i data-pct="80"></i></div></div>
+            </div>
+        </div>
+    </section>
 
-									<form id="contactForm">
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" name="message"></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<button class="contact-btn" type="submit">Submit</button>
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form>
-									
-									
-									<!--/form-->
-								</div><!--/.contact-form-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>Rajath K</h3>
-										<p>Mern Stack Developer</p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>phone</h3>
-											<p>9567028281</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<p>kalarikkalrajath@gmail.com</p>
-										</div>
-										
-									</div>
-								</div><!--/.contact-adress-->
-								<div class="hm-foot-icon">
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-dribbble"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
-									</ul><!--/ul-->
-								</div><!--/.hm-foot-icon-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" style="background:var(--bg-2);">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">Experience</span>
+                <h2>A journey through code.</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <div class="tl-date">2024 (Oct) — Present</div>
+                    <h4>Caparizon Software Pvt. Ltd.</h4>
+                    <div class="tl-role">Software Developer</div>
+                    <div class="tl-loc">Kochi, Kerala</div>
+                    <p class="desc">Caparizon Software Pvt. Ltd. is a software development company delivering web and application solutions to clients.</p>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">2023 (Jul) — 2024 (Aug)</div>
+                    <h4>Finobase Global Solutions</h4>
+                    <div class="tl-role">Software Developer</div>
+                    <div class="tl-loc">Kochi, Kerala</div>
+                    <p class="desc">Finobase is a leading software and web application development multinational company serving clients across the globe, which commenced operations in 2021.</p>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">2023 (Feb) — 2023 (Jul)</div>
+                    <h4>Dom Technolabs</h4>
+                    <div class="tl-role">React.js Developer</div>
+                    <div class="tl-loc">Kochi, Kerala</div>
+                    <p class="desc">Dom &amp; Dom Technology Solutions Pvt. Ltd. is a full-service digital agency located in Kerala, India.</p>
+                </div>
+                <div class="tl-item reveal">
+                    <div class="tl-date">2022 (Sep) — 2023 (Feb)</div>
+                    <h4>Poonchola Technologies</h4>
+                    <div class="tl-role">React.js Developer (Intern)</div>
+                    <div class="tl-loc">Kozhikode, Kerala</div>
+                    <p class="desc">Poonchola Technologies Pvt. Ltd. is one of the top computer training institutes located in Meenchanda, Kozhikode, Kerala.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		</section><!--/.contact-->
-		<!--contact end -->
+    <!-- WORK / PORTFOLIO -->
+    <section class="section" id="work">
+        <div class="wrap">
+            <div class="section-head reveal">
+                <span class="eyebrow">Selected work</span>
+                <h2>Projects I've shipped.</h2>
+            </div>
+            <div class="work-grid">
+                <a class="work-card reveal" href="https://www.propertyboz.com/" target="_blank" rel="noopener">
+                    <img src="assets/images/portfolio/propertyBoz.png" alt="PropertyBoz">
+                    <div class="work-overlay">
+                        <span class="tag">Web Platform</span>
+                        <h3>PropertyBoz <i class="fa fa-arrow-up" style="transform:rotate(45deg)"></i></h3>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="https://www.aeroerp.finobaseglobal.com/settings/signIn" target="_blank" rel="noopener">
+                    <img src="assets/images/portfolio/appLogo.png" alt="Aero ERP">
+                    <div class="work-overlay">
+                        <span class="tag">ERP System</span>
+                        <h3>Aero ERP <i class="fa fa-arrow-up" style="transform:rotate(45deg)"></i></h3>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="#">
+                    <img src="assets/images/portfolio/wardrobe.svg" alt="AI Wardrobe">
+                    <div class="work-overlay">
+                        <span class="tag">AI Product · Caparizon</span>
+                        <h3>Wardrobe</h3>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="#">
+                    <img src="assets/images/portfolio/panasonic.svg" alt="Panasonic">
+                    <div class="work-overlay">
+                        <span class="tag">Enterprise Web App</span>
+                        <h3>Panasonic</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-		<!--footer-copyright start-->
-		<footer id="footer-copyright" class="footer-copyright">
-			<!-- <div class="container">
-				<div class="hm-footer-copyright text-center">
-					<p>
-						&copy; copyright yourname. design and developed by <a href="https://www.themesine.com/">themesine</a>
-					</p>
-				</div>
-			</div> -->
-			
-			<!--/.container-->
+    <!-- CONTACT -->
+    <section class="section" id="contact" style="background:var(--bg-2);">
+        <div class="wrap">
+            <div class="contact-grid">
+                <div class="contact-cta reveal">
+                    <span class="eyebrow">Contact</span>
+                    <h2 style="margin-top:16px;">Let's build<br>something <span class="accent">meaningful.</span></h2>
+                    <div class="contact-detail">
+                        <div class="row">
+                            <h3>Email</h3>
+                            <a href="mailto:kalarikkalrajath@gmail.com">kalarikkalrajath@gmail.com</a>
+                        </div>
+                        <div class="row">
+                            <h3>Phone</h3>
+                            <p>9567028281</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/rajathlu" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rajath-k-957a6b21a" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_rajath___k?igsh=Z2lmeXdkdDRuZmt6" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="form reveal" id="contactForm" action="https://formsubmit.co/kalarikkalrajath@gmail.com" method="POST">
+                    <!-- FormSubmit settings -->
+                    <input type="hidden" name="_subject" value="New message from portfolio">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="formBtn">Send message <i class="fa fa-paper-plane"></i></button>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </div>
+    </section>
 
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" ></i>
-				</div>
-				
-			</div><!--/.scroll-Top-->
-				
-        </footer><!--/.footer-copyright-->
-		<!--footer-copyright end-->
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+    <!-- FOOTER -->
+    <footer class="foot">
+        <div class="wrap foot-inner">
+            <a href="#hero" class="brand"><span class="dot"></span>rajath k</a>
+            <p>&copy; <span id="year"></span> Rajath K — MERN Stack Developer. All rights reserved.</p>
+        </div>
+    </footer>
 
-		<script src="assets/js/jquery.js"></script>
+    <button id="toTop" aria-label="Back to top"><i class="fa fa-angle-up"></i></button>
 
-		
+    <script>
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
+        // Nav background on scroll + back-to-top
+        var nav = document.getElementById('nav');
+        var toTop = document.getElementById('toTop');
+        window.addEventListener('scroll', function () {
+            var y = window.scrollY;
+            nav.classList.toggle('scrolled', y > 40);
+            toTop.classList.toggle('show', y > 600);
+        });
+        toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
+        // Mobile menu
+        var toggle = document.getElementById('navToggle');
+        var links = document.getElementById('navLinks');
+        toggle.addEventListener('click', function () { links.classList.toggle('open'); });
+        links.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', function () { links.classList.remove('open'); });
+        });
 
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
+        // Scroll reveal + skill bars
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in');
+                    e.target.querySelectorAll('.bar > i').forEach(function (b) {
+                        b.style.width = b.getAttribute('data-pct') + '%';
+                    });
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
-		<!-- for progress bar end -->
+        // Contact form -> FormSubmit (AJAX). Mails submissions to kalarikkalrajath@gmail.com. No backend/account required.
+        var form = document.getElementById('contactForm');
+        var formBtn = document.getElementById('formBtn');
+        var formStatus = document.getElementById('formStatus');
+        var btnLabel = formBtn.innerHTML;
 
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+        form.addEventListener('submit', function (ev) {
+            ev.preventDefault();
+            formStatus.className = 'form-status';
+            formStatus.textContent = '';
+            formBtn.disabled = true;
+            formBtn.innerHTML = 'Sending...';
 
+            fetch('https://formsubmit.co/ajax/kalarikkalrajath@gmail.com', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: form.name.value,
+                    email: form.email.value,
+                    subject: form.subject.value,
+                    message: form.message.value,
+                    _subject: 'New message from portfolio — ' + (form.subject.value || form.name.value),
+                    _template: 'table',
+                    _captcha: 'false'
+                })
+            }).then(function (res) {
+                if (!res.ok) throw new Error('Request failed (' + res.status + ').');
+                return res.json();
+            }).then(function () {
+                form.reset();
+                formStatus.className = 'form-status ok';
+                formStatus.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
+            }).catch(function () {
+                formStatus.className = 'form-status err';
+                formStatus.textContent = 'Could not send right now. Please email me directly at kalarikkalrajath@gmail.com.';
+            }).finally(function () {
+                formBtn.disabled = false;
+                formBtn.innerHTML = btnLabel;
+            });
+        });
+    </script>
+</body>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
 </html>
