@@ -173,18 +173,16 @@
         @keyframes scroll { to { transform: translateX(-50%); } }
 
         /* ---------- ABOUT ---------- */
-        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
-        .about-img { position: relative; }
-        .about-img img { border-radius: var(--radius); width: 100%; object-fit: cover; filter: grayscale(0.15) contrast(1.02); }
-        .about-img .frame { position: absolute; inset: -14px -14px auto auto; width: 120px; height: 120px; border-top: 2px solid var(--accent); border-right: 2px solid var(--accent); border-top-right-radius: var(--radius); }
-        .about-social { position: absolute; bottom: 18px; left: 18px; display: flex; gap: 10px; }
+        .about-grid { display: grid; grid-template-columns: 1fr; max-width: 820px; margin: 0 auto; }
+        .about-txt { text-align: center; }
+        .about-social { display: flex; gap: 12px; justify-content: center; margin-top: 36px; }
         .about-social a {
             width: 44px; height: 44px; border-radius: 50%; background: rgba(10,10,11,0.7); backdrop-filter: blur(6px);
             display: grid; place-items: center; font-size: 16px; border: 1px solid var(--line); transition: .25s;
         }
         .about-social a:hover { background: var(--accent); color: #000; transform: translateY(-3px); }
         .about-txt p.lead { font-size: 19px; font-weight: 300; color: #cfcfd4; line-height: 1.7; }
-        .about-info { display: flex; gap: 48px; margin-top: 36px; flex-wrap: wrap; }
+        .about-info { display: flex; gap: 48px; margin-top: 36px; flex-wrap: wrap; justify-content: center; }
         .about-info h3 { font-family: var(--display); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 6px; }
         .about-info p { font-size: 16px; font-weight: 400; }
         .about-info a:hover { color: var(--accent); }
@@ -283,7 +281,6 @@
             .nav-links .nav-cta { margin: 12px 28px; text-align: center; }
             .nav-toggle { display: block; }
             .about-grid, .skills-grid, .contact-grid { grid-template-columns: 1fr; gap: 44px; }
-            .about-img { max-width: 420px; }
             .work-grid { grid-template-columns: 1fr; }
             .section { padding: 90px 0; }
             .hero-meta { gap: 36px; }
@@ -353,15 +350,6 @@
     <section class="section" id="about">
         <div class="wrap">
             <div class="about-grid">
-                <div class="about-img reveal tilt">
-                    <div class="frame"></div>
-                    <img src="assets/images/about/rajath (Large).jpg" alt="Rajath K">
-                    <div class="about-social">
-                        <a href="https://github.com/rajathlu" aria-label="GitHub"><i class="fa fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/rajath-k-957a6b21a" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/_rajath___k?igsh=Z2lmeXdkdDRuZmt6" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                    </div>
-                </div>
                 <div class="about-txt reveal">
                     <span class="eyebrow">About me</span>
                     <h2 style="font-family:var(--display);font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1;letter-spacing:-0.02em;margin:16px 0 22px;">
@@ -387,6 +375,11 @@
                             <h3>Role</h3>
                             <p>MERN Stack Developer</p>
                         </div>
+                    </div>
+                    <div class="about-social">
+                        <a href="https://github.com/rajathlu" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rajath-k-957a6b21a" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_rajath___k?igsh=Z2lmeXdkdDRuZmt6" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
